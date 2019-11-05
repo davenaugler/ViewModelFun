@@ -1,0 +1,17 @@
+@model UsersMessage
+<div class="row">
+  <div class="col">
+    <p class="text-center mt-4 mb-5">
+      @Model.Message
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <p>@foreach(string name in Model.Names)
+      {
+      <h4>@name</h4>
+      }
+    </p>
+  </div>
+</div>
